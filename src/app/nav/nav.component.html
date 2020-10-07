@@ -1,0 +1,105 @@
+<mat-sidenav-container class="sidenav-container">
+
+  <!-- <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#">Link 1</a>
+      <a mat-list-item href="#">Link 2</a>
+      <a mat-list-item href="#">Link 3</a>
+    </mat-nav-list>
+  </mat-sidenav> -->
+
+  <mat-sidenav-content class="top-nav">
+
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+
+      <!-- <img class="logo" src="../../assets/logo.jpg" alt=""> -->
+      <!-- <span class="website-name" routerLink="home">Medical ki Padhai</span> -->
+
+      <button 
+        class="website-name" 
+        mat-flat-button
+        color="primary"
+        routerLink="home"
+      >
+        Medical ki Padhai
+      </button>
+
+      <div class="header-item-container">
+
+        <input
+          type="text"
+          placeholder="Enter Course, Category or keyword.."
+          class="search"
+        />
+
+        <!-- <app-search></app-search> -->
+
+        <button
+          class="home" 
+          mat-flat-button
+          color="primary" 
+          routerLink="/home"
+          >
+          Home
+        </button>
+        
+        <button
+          class="courses"
+          mat-flat-button
+          color="primary"
+          routerLink="/courses"
+        >
+          Courses
+        </button>
+
+        <button
+          class="blog"
+          mat-flat-button
+          color="primary"
+          routerLink="/blog"
+        >
+          Blog
+        </button>
+       
+        <button
+          class="login"
+          mat-flat-button
+          color="primary"
+          routerLink="/login"
+        >
+          Login
+        </button>
+
+        <button
+        class="signup"
+        mat-flat-button
+        color="primary"
+        routerLink="/signup"
+      >
+        Sign Up
+      </button>
+
+
+      </div>
+
+    </mat-toolbar>
+
+    <!-- Add Content Here -->
+
+    <router-outlet></router-outlet>
+
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

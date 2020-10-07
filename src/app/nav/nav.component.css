@@ -1,0 +1,78 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+
+.header-item-container {
+  font-size: 1em;
+}
+
+.logo {
+  width: 90px;
+  height: 50px;
+}
+
+.website-name {
+  margin-left: 2em;
+  font-size: 1em;
+}
+
+.search {
+  margin-left: 12em;
+  margin-right: 13em;
+  height: 1.8em;
+  width: 20em;
+  font-size: 0.9em;
+}
+
+.search::placeholder {
+  font-size: 0.8em;
+}
+
+.home {
+  margin-right: 1em;
+  font-size: 0.9em;
+}
+
+.courses {
+  margin-right: 1em;
+  font-size: 0.9em;
+}
+
+.blog {
+  font-size: 0.9em;
+  border-right: 3px solid white;
+}
+
+.cart {
+
+}
+
+.login {
+  margin-left: 2em;
+  margin-right: 1em;
+  font-size: 0.9em;
+  padding: 0.19em 0.6em;
+  /* background-color: #0f7c90; */
+}
+
+.signup {
+  margin-right: 1em;
+  font-size: 0.9em;
+  padding: 0.1em 0.34em;
+  background-color: #0f7c90;
+}
