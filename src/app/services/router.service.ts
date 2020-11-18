@@ -27,4 +27,8 @@ export class RouterService {
   routeToSignup() {
     this.router.navigate(['/signup']);
   }
+
+  routeToAboutMe() {
+    this.router.navigate(['/about-me']);
+  }
 }

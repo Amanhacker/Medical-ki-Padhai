@@ -60,5 +60,10 @@
       line-height: 1.8;
       font-weight: 300;
       color: black;
-      margin-bottom: 1.4em;
+      margin-bottom:0.4em;
+  }
+
+  .about-me {
+      text-align: center;
+      margin-left: 51.5em;
   }
