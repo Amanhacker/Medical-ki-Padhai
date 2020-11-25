@@ -69,8 +69,8 @@
   border-right: 3px solid white;
 }
 
-.cart {
-
+#navbar {
+  transition: all 0.3s;
 }
 
 .login {

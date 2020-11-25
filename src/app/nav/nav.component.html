@@ -1,3 +1,5 @@
+<div id="navbar">
+
 <mat-sidenav-container class="sidenav-container">
 
   <!-- <mat-sidenav #drawer class="sidenav" fixedInViewport
@@ -37,7 +39,7 @@
         Medical ki Padhai
       </button>
 
-      <div class="header-item-container" id="navbar">
+      <div class="header-item-container">
 
         <input
           type="text"
@@ -107,19 +109,6 @@
         </div>
 
       </div>
-
-      <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-          if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-          } else {
-            document.getElementById("navbar").style.top = "-50px";
-          }
-          prevScrollpos = currentScrollPos;
-        }
-        </script>
         
     </mat-toolbar>
 
@@ -128,3 +117,20 @@
     <app-footer></app-footer>
   </mat-sidenav-content>
 </mat-sidenav-container>
+
+</div>
+
+<script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.querySelector("navbar").style.top = "0";
+    } else {
+      document.querySelector("navbar").style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+  </script>
+
+
