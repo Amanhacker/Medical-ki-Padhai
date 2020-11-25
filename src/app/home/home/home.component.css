@@ -121,12 +121,13 @@
 .fo {
     margin-top: 1em;
     text-align: center;
-    font-size: 1.29rem;
+    font-size: 2.5em;
     line-height: 1.8;
-    font-weight: 300;
     color: black;
     margin-bottom:0.4em;
-    font-family: "Playfair Display";
+    font-family: 'Times New Roman', Times, serif;
+    /* font-family: "Playfair Display"; */
+    font-weight: 100;
 }
 
 .about-me {
@@ -188,7 +189,7 @@
     
     .yout {
         font-size: 1.8em;
-        text-decoration: underline;
+        /* text-decoration: underline; */
     }
 
     /* 1 for responsive and 2nd for desktop */
@@ -201,9 +202,9 @@
     }
 
     .founder {
-        font-size: 2.2em;
-        margin-left: 1em;
-        margin-right: 1em;
+        font-size: 2em;
+        margin-left: 1.3em;
+        margin-right: 1.1em;
     }
 
     .founder-image {
@@ -216,6 +217,9 @@
 
     .founder-name {
         margin-top: 0.4em;
+        margin-left: 0.2em;
+        margin-right: 0.2em;
+        font-size: 3em;
     }
 
     .fo {
