@@ -1,7 +1,3 @@
-.top-nav {
-
-}
-
 .sidenav-container {
   height: 100%;
 }
@@ -100,6 +96,7 @@
         
     .search {
       margin-left: -4em;
+      margin-right: -4em;
       margin-top: 15em;
       margin-bottom: 1em;
       width: 18em;
@@ -109,6 +106,7 @@
         display: flex;
         flex-direction: column;
         margin-left: -4em;
+        margin-right: -4em;
         margin-top: 0.2em;
 
         transition: top 0.3s;
@@ -117,20 +115,21 @@
     .icons-first-row {
       display: flex;
       flex-direction: row;
-      margin-left: 1.6em;
+      margin-left: 1.2em;
+      margin-right: 1.2em;
       margin-bottom: 0.4em;
       width: 15em;
     }
 
     #btn1 {
       margin-bottom: 0.5em;
-      margin-right: 1.2em;
     }
 
     .icons-second-row {
       display: flex;
       flex-direction: row;
       margin-left: 1.5em;
+      margin-right: 1.5em;
       width: 20em;
     }
 
@@ -144,7 +143,8 @@
 
     #btn2 {
       margin-bottom: 0.5em;
-      margin-right: 1.5em;
+      margin-right: 1em;
+      margin-left: 1em;
     }
  
 

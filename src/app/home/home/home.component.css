@@ -28,13 +28,21 @@
     margin-left: 11em;
     margin-right: 11em;
     font-family: 'Poppins',sans-serif;
-    line-height: 1;
+    line-height: 1.5;
     color: #000c30;
-    font-size: 1.21em;
+    font-size: 1.7em;
     font-style: inherit;
     font-weight: inherit;
     display: block;
     position: relative;
+}
+
+#join {
+    font-size: 1.3em;
+    margin-left: 9em;
+    margin-right: 9em;
+    color: black;
+    font-weight: 200;
 }
 
 
@@ -48,19 +56,14 @@
     letter-spacing: 0px;
     color: #000c30;
 }
-/* 
-#yout-icon {
-    margin-left: 2em;
-    margin-top: 0.3em;
-    font-size: 40px;
-    color:red;
-} */
  
 #yout-icon {
     margin-left: 5.8em;
+    margin-right: 5.8em;
     margin-top: 0.2em;
     font-size: 120px;
     color:red;
+    border-width: 1em;
 }
 
 .founder-page {
@@ -93,6 +96,7 @@
 .founder-image {
     margin-top: 2em;
     margin-left: 43em;
+    margin-right: 43em;
     width: 21%;
     height: 20%;
     background-color: rgb(247, 247, 247);
@@ -128,6 +132,7 @@
 .about-me {
     text-align: center;
     margin-left: 49em;
+    margin-right: 49em;
     margin-bottom: 4em;
     width: 10em;
 }
@@ -146,7 +151,7 @@
 .about-fo {
     text-align: center;
     font-family: "Playfair Display";
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: 100;
     letter-spacing: 0px;
     color: black;
@@ -155,6 +160,10 @@
 
 
   @media screen and (max-width: 600px) {
+
+    .main {
+        width: 100%;
+    }
 
     .img {
         height: 400px;
@@ -166,39 +175,41 @@
     }
 
     .my-website p {
-        margin-left: 1.1em;
-        margin-right: 1.1em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-size: 1.1em;
+        line-height: 1.5em;
     }
 
+    #join {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    
     .yout {
-        font-size: 2em;
+        font-size: 1.8em;
         text-decoration: underline;
     }
 
     /* 1 for responsive and 2nd for desktop */
-    #yout-icon1 {   
-        margin-left: 1.6em;
+    #yout-icon {   
+        margin-left: 1.5em;
+        margin-right: 1.5em;
         margin-top: 0.3em;
         font-size: 100px;
         color:red;
     }
 
-    #yout-icon2 {
-        margin-left: 2em;
-        margin-top: 0.3em;
-        font-size: 40px;
-        color:red;
-        opacity: 0%;
-    }
-
     .founder {
         font-size: 2.2em;
         margin-left: 1em;
+        margin-right: 1em;
     }
 
     .founder-image {
         margin-top: 0.4em;
         margin-left: 4em;
+        margin-right: 4em;
         height: 300px;
         width: 300px;
     }
@@ -213,6 +224,7 @@
 
     .about-me {
         margin-left: 7.1em;
+        margin-right: 7.1em;
         font-size: 1.4em;
         width: 6.5em;
         height: 1.6em;

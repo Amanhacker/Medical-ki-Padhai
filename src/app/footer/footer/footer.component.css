@@ -4,7 +4,7 @@
     margin-top: 0%;
     /* background-color:rgb(68, 55, 187); */
     background-color: rgb(60,84,180);
-    height: 38vh;
+    height: 41vh;
     width: 100%;
 }
 
@@ -68,6 +68,7 @@
     font-size: 1.2em;
     color: white;
     margin-top: 0.4em;
+    margin-bottom: 0.2em;
 }
 
 .button h1 {
@@ -86,6 +87,7 @@
     box-shadow: black;
     font-weight: bold;
     font-size: 2.5em;
+    margin-bottom: 2em;
 }
 
 #social-media-links a:link .fa, #social-media-links a:visited .fa  {
@@ -124,8 +126,8 @@
 @media screen and (max-width: 600px) {
 
     .footer-section-container {
-        height: 58vh;
-        margin-top: 30vh;
+        height: 61vh;
+        margin-top: 35vh;
     }
 
     .footer-section-content {
@@ -136,6 +138,7 @@
 
     .recent-news-section {
         margin-left: 3.8em;
+        margin-right: 3.8em;
         margin-top: 1.8em;
         width: auto;
     }
@@ -147,10 +150,12 @@
     .copyright {
         margin-top: 24vh;
         font-size: 1.05em;
+        margin-bottom: 1em;
     }
 
     .signup-section {
-        margin-left: 4vh;
+        margin-left: 2em;
+        margin-right: 2em;
         margin-top: 1.5em;
         margin-bottom: 1em;
     }
@@ -161,6 +166,7 @@
 
     .button {
         margin-left: 0.8em;
+        margin-right: 0.8em;
     }
 
 }
