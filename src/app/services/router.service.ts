@@ -1,9 +1,10 @@
-import { Injectable } from '@angular/core';
+import { Injectable, NgModule } from '@angular/core';
 import { Router } from '@angular/router'
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class RouterService {
 
   constructor(private router: Router) { }
@@ -11,7 +12,7 @@ export class RouterService {
   routeToHome() {
     this.router.navigate(['/home']);
   }
-
+ 
   routeToCourses() {
     this.router.navigate(['/courses']);
   }
@@ -31,4 +32,5 @@ export class RouterService {
   routeToAboutMe() {
     this.router.navigate(['/about-me']);
   }
+
 }

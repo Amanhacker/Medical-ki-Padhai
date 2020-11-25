@@ -8,71 +8,186 @@
     font-weight: bold;
   }
 
-  .founder-page {
-      width: 100%;
-      height: 100em;
-
-  }
-  .founder {
-      text-align: center;
-      margin-top: 2em;
-      font-size: 2.8em;
-      text-decoration-style: wavy;
-      color: rgb(65, 172, 214);
-      font-family: "Open Sans", sans-serif;
-      font-weight: 300;
-      letter-spacing: 4px;
-      margin-bottom: 0.7em;
-
-      /* color: rgb(60, 84, 180); */
+  .my-website {
+      margin-top: 5em;
   }
 
-  .founder-tag {
-      text-align: center;
-      font-size: 1.29rem;
-      line-height: 1.8;
-      font-weight: 300;
-      color: black;
-  }
-
-  .founder-image {
-      margin-top: 2em;
-      margin-left: 43em;
-      width: 21%;
-      height: 20%;
-      background-color: rgb(247, 247, 247);
-  }
-
-  .founder-name {
+.my-website h1 {
     text-align: center;
-    margin-top: 1em;
-    font-size: 2.7em;
-    line-height: 1.1;
+    margin-bottom: 1.2em;
+
+    font-family: "Playfair Display";
+    font-size: 5em;
+    font-weight: 100;
+    letter-spacing: 0px;
+    color: #000c30;
+}
+
+.my-website p {
+    text-align: center;
+    margin-left: 11em;
+    margin-right: 11em;
+    font-family: 'Poppins',sans-serif;
+    line-height: 1;
+    color: #000c30;
+    font-size: 1.21em;
+    font-style: inherit;
+    font-weight: inherit;
+    display: block;
+    position: relative;
+}
+
+
+.yout {
+    text-align: center;
+    margin-top: 2em;
+
+    font-family: "Playfair Display";
+    font-size: 3em;
+    font-weight: 100;
+    letter-spacing: 0px;
+    color: #000c30;
+}
+/* 
+#yout-icon {
+    margin-left: 2em;
+    margin-top: 0.3em;
+    font-size: 40px;
+    color:red;
+} */
+ 
+#yout-icon {
+    margin-left: 5.8em;
+    margin-top: 0.2em;
+    font-size: 120px;
+    color:red;
+}
+
+.founder-page {
+    width: 100%;
+}
+
+.founder {
+    text-align: center;
+    margin-top: 3.8em;
+    font-size: 2.8em;
+    text-decoration-style: wavy;
+    color: rgb(65, 172, 214);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    letter-spacing: 4px;
+    margin-bottom: 0.7em;
+
+    /* color: rgb(60, 84, 180); */
+}
+
+.founder-tag {
+    text-align: center;
+    font-size: 1.29rem;
+    line-height: 1.8;
     font-weight: 300;
     color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+    font-family: "Playfair Display";
+}
 
-  .fo {
-      margin-top: 1em;
-      text-align: center;
-      font-size: 1.29rem;
-      line-height: 1.8;
-      font-weight: 300;
-      color: black;
-      margin-bottom:0.4em;
-  }
+.founder-image {
+    margin-top: 2em;
+    margin-left: 43em;
+    width: 21%;
+    height: 20%;
+    background-color: rgb(247, 247, 247);
+    border:1px solid #021a40;
+    border-radius: 1em;
+    border-style: outset;
+}
 
-  .about-me {
-      text-align: center;
-      margin-left: 51.5em;
-  }
+.founder-name {
+    text-align: center;
+    margin-top: 1em;
+    line-height: 1.1;
+    color: black;
+
+    font-family: "Playfair Display";
+    font-size: 4em;
+    font-weight: 100;
+    letter-spacing: 0px;
+    color: #000c30;
+}
+
+.fo {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.29rem;
+    line-height: 1.8;
+    font-weight: 300;
+    color: black;
+    margin-bottom:0.4em;
+    font-family: "Playfair Display";
+}
+
+.about-me {
+    text-align: center;
+    margin-left: 51.5em;
+    margin-bottom: 4em;
+}
+
+.about {
+    text-align: center;
+    margin-bottom: 1em;
+
+    font-family: "Playfair Display";
+    font-size: 2.5em;
+    font-weight: 100;
+    letter-spacing: 0px;
+    color: #000c30;
+}
+
+.about-fo {
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 1.4em;
+    font-weight: 100;
+    letter-spacing: 0px;
+    color: black;
+    margin-bottom: 7em;
+}
+
 
   @media screen and (max-width: 600px) {
 
     .img {
         height: 400px;
         width: 411px;
+    }
+
+    .my-website h1 {
+        font-size: 2em;
+    }
+
+    .my-website p {
+        margin-left: 1.1em;
+        margin-right: 1.1em;
+    }
+
+    .yout {
+        font-size: 2em;
+        text-decoration: underline;
+    }
+
+    /* 1 for responsive and 2nd for desktop */
+    #yout-icon1 {   
+        margin-left: 1.6em;
+        margin-top: 0.3em;
+        font-size: 100px;
+        color:red;
+    }
+
+    #yout-icon2 {
+        margin-left: 2em;
+        margin-top: 0.3em;
+        font-size: 40px;
+        color:red;
+        opacity: 0%;
     }
 
     .founder {
@@ -100,7 +215,26 @@
         font-size: 1.4em;
         width: 6.5em;
         height: 1.6em;
+        margin-bottom: 0%;
     }
+
+    .about {
+        font-size: 1.6em;
+        margin-left: 1em;
+        margin-right: 1em;
+        line-height: 1.5;
+        margin-top: 1em;
+    }
+
+    .about-fo {
+        margin-left: 1.2em;
+        margin-right: 1.2em;
+        margin-top: 1em;
+        line-height: 1.5;
+        font-size: 1.3em;
+        margin-bottom: 1em;
+    }
+
 
 
 

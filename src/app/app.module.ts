@@ -23,6 +23,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { HomeModule } from './home/home.module';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { FooterModule } from './footer/footer.module';
+import { RouterService } from './services/router.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,7 @@ import { FooterModule } from './footer/footer.module';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    HttpClientModule,
 
     NgbModule,
     MatCarouselModule,
@@ -52,10 +55,10 @@ import { FooterModule } from './footer/footer.module';
     LoginModule,
     SignupModule,
     PagenotfoundModule,
-    FooterModule
+    FooterModule,
 
   ],
-  providers: [],
+  providers: [HttpClientModule, RouterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

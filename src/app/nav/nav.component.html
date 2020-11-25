@@ -11,7 +11,7 @@
       <a mat-list-item href="#">Link 3</a>
     </mat-nav-list>
   </mat-sidenav> -->
-
+  
   <mat-sidenav-content class="top-nav">
 
     <mat-toolbar class="top" color="primary">
@@ -37,7 +37,7 @@
         Medical ki Padhai
       </button>
 
-      <div class="header-item-container">
+      <div class="header-item-container" id="navbar">
 
         <input
           type="text"
@@ -48,75 +48,83 @@
         <!-- <app-search></app-search> -->
         <div class="icons-top">
 
-          <div class="icons-first-row">
-            
-            <button
-              class="home" 
-              id="btn1"
-              mat-flat-button
-              color="primary" 
-              routerLink="/home"
-              >
-              Home
-            </button>
-            
-            <button
-              class="courses"
-              id="btn1"
-              mat-flat-button
-              color="primary"
-              routerLink="/courses"
-            >
-              Courses
-            </button>
+              <div class="icons-first-row">
+                
+                <button
+                  class="home" 
+                  id="btn1"
+                  mat-flat-button
+                  color="primary" 
+                  routerLink="/home"
+                  >
+                  Home
+                </button>
+                
+                <button
+                  class="courses"
+                  id="btn1"
+                  mat-flat-button
+                  color="primary"
+                  routerLink="/courses"
+                >
+                  Courses
+                </button>
 
-            <button
-              class="blog"
-              id="btn1"
-              mat-flat-button
-              color="primary"
-              routerLink="/blog"
-            >
-              Blog
-            </button>
+                <button
+                  class="blog"
+                  id="btn1"
+                  mat-flat-button
+                  color="primary"
+                  routerLink="/blog"
+                >
+                  Blog
+                </button>
 
-          </div>
-          
-          <div class="icons-second-row">
-            <button
-              class="login"
-              id="btn2"
-              mat-flat-button
-              color="primary"
-              routerLink="/login"
-            >
-              Login
-            </button>
+              </div>
+              
+              <!-- 2nd row -->
+              <div class="icons-second-row">
+                <button
+                  class="login"
+                  id="btn2"
+                  mat-flat-button
+                  color="primary"
+                  routerLink="/login">
+                  Login
+                </button>
 
-            <button
-            class="signup"
-            id="btn2"
-            mat-flat-button
-            color="primary"
-            routerLink="/signup"
-          >
-            Sign Up
-          </button>
+                <button
+                  class="signup"
+                  id="btn2"
+                  mat-flat-button
+                  color="primary"
+                  routerLink="/signup"
+                >
+                  Sign Up
+                </button>
+              </div>
 
         </div>
 
       </div>
 
-
-      </div>
-
+      <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-50px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
+        
     </mat-toolbar>
 
     <!-- Add Content Here -->
-
     <router-outlet></router-outlet>
     <app-footer></app-footer>
-
-
   </mat-sidenav-content>
 </mat-sidenav-container>

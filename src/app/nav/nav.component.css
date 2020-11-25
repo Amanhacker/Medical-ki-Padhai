@@ -1,3 +1,7 @@
+.top-nav {
+
+}
+
 .sidenav-container {
   height: 100%;
 }
@@ -106,6 +110,8 @@
         flex-direction: column;
         margin-left: -4em;
         margin-top: 0.2em;
+
+        transition: top 0.3s;
     }
 
     .icons-first-row {
