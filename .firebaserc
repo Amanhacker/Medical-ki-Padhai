@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "medical-ki-padhai"
+  },
+  "targets": {
+    "medical-ki-padhai": {
+      "hosting": {
+        "anku-website": [
+          "medical-ki-padhai"
+        ]
+      }
+    }
+  }
+}

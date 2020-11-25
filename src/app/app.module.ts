@@ -22,6 +22,7 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { HomeModule } from './home/home.module';
 import { YouTubePlayerModule } from '@angular/youtube-player';
+import { FooterModule } from './footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
     BlogModule,
     LoginModule,
     SignupModule,
-    PagenotfoundModule
+    PagenotfoundModule,
+    FooterModule
 
   ],
   providers: [],

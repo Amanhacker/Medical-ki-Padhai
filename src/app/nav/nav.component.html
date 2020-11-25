@@ -14,7 +14,8 @@
 
   <mat-sidenav-content class="top-nav">
 
-    <mat-toolbar color="primary">
+    <mat-toolbar class="top" color="primary">
+  
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -45,51 +46,66 @@
         />
 
         <!-- <app-search></app-search> -->
+        <div class="icons-top">
 
-        <button
-          class="home" 
-          mat-flat-button
-          color="primary" 
-          routerLink="/home"
+          <div class="icons-first-row">
+            
+            <button
+              class="home" 
+              id="btn1"
+              mat-flat-button
+              color="primary" 
+              routerLink="/home"
+              >
+              Home
+            </button>
+            
+            <button
+              class="courses"
+              id="btn1"
+              mat-flat-button
+              color="primary"
+              routerLink="/courses"
+            >
+              Courses
+            </button>
+
+            <button
+              class="blog"
+              id="btn1"
+              mat-flat-button
+              color="primary"
+              routerLink="/blog"
+            >
+              Blog
+            </button>
+
+          </div>
+          
+          <div class="icons-second-row">
+            <button
+              class="login"
+              id="btn2"
+              mat-flat-button
+              color="primary"
+              routerLink="/login"
+            >
+              Login
+            </button>
+
+            <button
+            class="signup"
+            id="btn2"
+            mat-flat-button
+            color="primary"
+            routerLink="/signup"
           >
-          Home
-        </button>
-        
-        <button
-          class="courses"
-          mat-flat-button
-          color="primary"
-          routerLink="/courses"
-        >
-          Courses
-        </button>
+            Sign Up
+          </button>
 
-        <button
-          class="blog"
-          mat-flat-button
-          color="primary"
-          routerLink="/blog"
-        >
-          Blog
-        </button>
-       
-        <button
-          class="login"
-          mat-flat-button
-          color="primary"
-          routerLink="/login"
-        >
-          Login
-        </button>
+        </div>
 
-        <button
-        class="signup"
-        mat-flat-button
-        color="primary"
-        routerLink="/signup"
-      >
-        Sign Up
-      </button>
+      </div>
 
 
       </div>
@@ -99,6 +115,7 @@
     <!-- Add Content Here -->
 
     <router-outlet></router-outlet>
+    <app-footer></app-footer>
 
 
   </mat-sidenav-content>

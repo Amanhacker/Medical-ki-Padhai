@@ -30,7 +30,7 @@
             ],
             "scripts": []
           },
-          "configurations": { 
+          "configurations": {
             "production": {
               "fileReplacements": [
                 {
@@ -120,6 +120,10 @@
               "devServerTarget": "anku-website:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }
